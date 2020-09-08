@@ -10,11 +10,15 @@
       <b-collapse id="nav-collapse" is-nav>
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-          <b-nav-item href="#">
-            Link
+          <b-nav-item>
+            <nuxt-link to="/blog">
+              Blog
+            </nuxt-link>
           </b-nav-item>
-          <b-nav-item href="#">
-            Link
+          <b-nav-item>
+            <nuxt-link to="/about">
+              About
+            </nuxt-link>
           </b-nav-item>
         </b-navbar-nav>
       </b-collapse>
@@ -35,7 +39,20 @@ export default {
 </script>
 
 <style lang="css" scoped>
-  .navbar {
-    background-color: hotpink;
-  }
+.navbar {
+  background-color: hotpink;
+}
+
+  .nav-link a {
+  color: lightgrey;
+  text-decoration: none;
+}
+
+.nav-link a:active {
+  color: white;
+}
+
+.nav-link a:hover {
+  color: white;
+}
 </style>
