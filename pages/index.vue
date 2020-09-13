@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="home-content">
     <MyTestComponent />
     <Aisha />
   </div>
@@ -18,13 +18,13 @@ export default {
 </script>
 
 <style>
-.container {
+.home-content {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: left;
+  align-items: top;
+  text-align: left;
 }
 
 .title {

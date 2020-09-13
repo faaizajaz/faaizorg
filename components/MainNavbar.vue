@@ -1,29 +1,25 @@
 <template>
-  <b-container fluid="lg">
-    <b-navbar toggleable="lg" type="dark">
-      <b-navbar-brand href="#">
-        Faaiz Ajaz
-      </b-navbar-brand>
+  <!--   <b-container fluid="lg"> -->
+  <b-navbar toggleable="lg" type="dark">
+    <nuxt-link to="/" class="logo">
+      Faaiz Ajaz
+    </nuxt-link>
 
-      <b-navbar-toggle target="nav-collapse" />
+    <b-navbar-toggle target="nav-collapse" />
 
-      <b-collapse id="nav-collapse" is-nav>
-        <!-- Right aligned nav items -->
-        <b-navbar-nav class="ml-auto">
-          <b-nav-item>
-            <nuxt-link to="/blog">
-              Blog
-            </nuxt-link>
-          </b-nav-item>
-          <b-nav-item>
-            <nuxt-link to="/about">
-              About
-            </nuxt-link>
-          </b-nav-item>
-        </b-navbar-nav>
-      </b-collapse>
-    </b-navbar>
-  </b-container>
+    <b-collapse id="nav-collapse" is-nav>
+      <!-- Right aligned nav items -->
+      <b-navbar-nav class="ml-auto">
+        <nuxt-link to="/blog">
+          Blog
+        </nuxt-link>
+        <nuxt-link to="/about">
+          About
+        </nuxt-link>
+      </b-navbar-nav>
+    </b-collapse>
+  </b-navbar>
+<!--   </b-container> -->
 </template>
 
 <script>
@@ -43,16 +39,24 @@ export default {
   background-color: hotpink;
 }
 
-  .nav-link a {
+.navbar-nav a {
   color: lightgrey;
   text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.nav-link a:active {
+.navbar-nav a:active {
   color: white;
 }
 
-.nav-link a:hover {
+.navbar-nav a:hover {
   color: white;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
 }
 </style>
