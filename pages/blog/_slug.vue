@@ -1,5 +1,16 @@
 <template>
   <div>
+    <nav>
+      <ul>
+        <li v-for="link in blogPost.toc" :key="link.id">
+          <NuxtLink :to="`#${link.id}`" :class="{ 'l1': link.depth === 2, 'l2': link.depth === 3 }">
+            {{ link.text }}
+          </NuxtLink>
+        </li>
+      </ul>
+    </nav>
+    <Author :author="blogPost.author" />
+    <PrevNext :prev="prev" :next="next" />
     <h1>
       {{ blogPost.title }}
     </h1>
@@ -7,7 +18,6 @@
       Updated: {{ formatDate(blogPost.updatedAt) }}
     </p>
     <nuxt-content :document="blogPost" />
-    <p>{{ blogPost }}</p>
   </div>
 </template>
 
@@ -15,7 +25,16 @@
 export default {
   async asyncData ({ $content, params }) {
     const blogPost = await $content('blog', params.slug).fetch()
-    return { blogPost }
+    const [prev, next] = await $content('blog')
+      .only(['title', 'slug'])
+      .sortBy('createdAt', 'asc')
+      .surround(params.slug)
+      .fetch()
+    return {
+      blogPost,
+      prev,
+      next
+    }
   },
   methods: {
     formatDate (date) {
@@ -35,4 +54,7 @@ export default {
   background-size: 20px 20px;
 }
 
+.l2 {
+  padding-left: 8px;
+}
 </style>

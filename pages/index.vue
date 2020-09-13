@@ -1,18 +1,15 @@
 <template>
   <div class="home-content">
     <MyTestComponent />
-    <Aisha />
   </div>
 </template>
 
 <script>
 import MyTestComponent from '../components/MyTestComponent'
-import Aisha from '../components/Aisha'
 
 export default {
   components: {
-    MyTestComponent,
-    Aisha
+    MyTestComponent
   }
 }
 </script>
