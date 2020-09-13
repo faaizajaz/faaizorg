@@ -1,21 +1,21 @@
 <template>
   <!--   <b-container fluid="lg"> -->
   <b-navbar toggleable="lg" type="dark">
-    <nuxt-link to="/" class="logo">
+    <NuxtLink to="/" class="logo">
       Faaiz Ajaz
-    </nuxt-link>
+    </NuxtLink>
 
     <b-navbar-toggle target="nav-collapse" />
 
     <b-collapse id="nav-collapse" is-nav>
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
-        <nuxt-link to="/blog">
+        <NuxtLink to="/blog">
           Blog
-        </nuxt-link>
-        <nuxt-link to="/about">
+        </NuxtLink>
+        <NuxtLink to="/about">
           About
-        </nuxt-link>
+        </NuxtLink>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
