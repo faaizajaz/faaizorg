@@ -1,10 +1,8 @@
 <template>
   <div>
-    <div>
-      <h5>Author</h5>
-      <span>{{ author.name }}</span>
-      <p>{{ author.bio }}</p>
-    </div>
+    <h5>Author</h5>
+    <span>{{ author.name }}</span>
+    <p>{{ author.bio }}</p>
   </div>
 </template>
 

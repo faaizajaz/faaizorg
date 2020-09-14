@@ -19,6 +19,7 @@
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
+
 <!--   </b-container> -->
 </template>
 
@@ -37,6 +38,7 @@ export default {
 <style lang="css" scoped>
 .navbar {
   background-color: hotpink;
+  width: 100%;
 }
 
 .navbar-nav a {

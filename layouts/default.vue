@@ -1,16 +1,25 @@
 <template>
-  <div class="container-lg">
-    <MainNavbar />
-    <Nuxt />
-  </div>
+  <b-container>
+    <b-row>
+      <MainNavbar />
+      <b-col class="no-margin" cols="12" md="3">
+        <SideNavbar />
+      </b-col>
+      <b-col class="no margin" cols="12" md="9">
+        <Nuxt />
+      </b-col>
+    </b-row>
+  </b-container>
 </template>
 
 <script>
 import MainNavbar from '../components/MainNavbar'
+import SideNavbar from '../components/SideNavbar'
 
 export default {
   components: {
-    MainNavbar
+    MainNavbar,
+    SideNavbar
   }
 }
 </script>
@@ -42,8 +51,8 @@ html {
   margin: 0;
 }
 
-.container-lg {
-  max-width: 1300px;
+.container {
+/*   max-width: 1300px; */
   padding:  0px;
 }
 </style>

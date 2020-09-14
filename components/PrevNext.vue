@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between">
+  <div class="flex justify-content-between">
     <NuxtLink
       v-if="prev"
       :to="{ name: 'blog-slug', params: { slug: prev.slug } }"
