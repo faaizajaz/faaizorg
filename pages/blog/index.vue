@@ -4,9 +4,10 @@
       <li v-for="post in allPosts" :key="post.slug">
         <NuxtLink :to="{ name: 'blog-slug', params: { slug: post.slug }}">
           <h5>{{ post.title }}</h5>
-          <p>by {{ post.author.name }}</p>
-          <p>{{ post.description }}</p>
+          <span>by {{ post.author.name }}</span>
+          <span>{{ post.description }}</span>
         </NuxtLink>
+        <hr>
       </li>
     </ul>
   </div>

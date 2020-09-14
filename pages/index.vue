@@ -17,7 +17,7 @@ export default {
 <style>
 .home-content {
   margin: 0 auto;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   justify-content: left;
   align-items: top;

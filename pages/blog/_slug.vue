@@ -3,7 +3,7 @@
     <nav>
       <ul>
         <li v-for="link in blogPost.toc" :key="link.id">
-          <NuxtLink :to="`#${link.id}`" :class="{ 'l1': link.depth === 2, 'l2': link.depth === 3 }">
+          <NuxtLink :to="`#${link.id}`" :class="{ 'l1': link.depth === 2, 'l2': link.depth === 3}">
             {{ link.text }}
           </NuxtLink>
         </li>
@@ -56,5 +56,14 @@ export default {
 
 .l2 {
   padding-left: 8px;
+}
+
+.blog-post {
+  margin: 0 auto;
+  /* min-height: 100vh; */
+  display: flex;
+  justify-content: left;
+  align-items: top;
+  text-align: left;
 }
 </style>
