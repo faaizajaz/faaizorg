@@ -1,7 +1,10 @@
 <template>
-  <b-col class="fa-side-nav">
-    Here is some additional content. It is content as you imagine.
-  </b-col>
+  <div class="nav flex-column flex-nowrap vh-100 overflow-auto text-white p-2">
+    <a href="./" class="nav-link">Link</a>
+    <a href="./" class="nav-link">Link</a>
+    <a href="./" class="nav-link">Link</a>
+    <a href="./" class="nav-link">Link</a>
+  </div>
 </template>
 
 <script>
@@ -11,5 +14,10 @@ export default {
 </script>
 
 <style>
+.navbar {
+  max-height: 100%;
+  min-height: 100vh;
+  align-items: flex-start;
+}
 
 </style>

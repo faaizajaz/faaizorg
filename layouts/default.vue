@@ -1,24 +1,23 @@
 <template>
-  <b-container>
+  <b-container fluid>
     <b-row>
-      <MainNavbar />
-      <b-col class="no-margin" cols="12" md="3">
+      <div class="gutter col-xl-2 col-lg-1 d-none d-sm-none d-md-none d-lg-block" />
+      <div class="d-none d-sm-none d-md-none d-lg-block col-2 px-1 bg-dark position-fixed offset-xl-2 offset-lg-1">
         <SideNavbar />
-      </b-col>
-      <b-col class="no margin" cols="12" md="9">
+      </div>
+      <div class="col-xl-6 col-lg-8 offset-xl-2 offset-lg-2">
         <Nuxt />
-      </b-col>
+      </div>
+      <div class="gutter col-xl-2 col-lg-1 d-none d-sm-none d-md-none d-lg-block" />
     </b-row>
   </b-container>
 </template>
 
 <script>
-import MainNavbar from '../components/MainNavbar'
 import SideNavbar from '../components/SideNavbar'
 
 export default {
   components: {
-    MainNavbar,
     SideNavbar
   }
 }
@@ -51,8 +50,9 @@ html {
   margin: 0;
 }
 
-.container {
-/*   max-width: 1300px; */
-  padding:  0px;
+.gutter {
+    background-color: green;
+    min-height: 100vh;
+    max-height: 100%;
 }
 </style>
