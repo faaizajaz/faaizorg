@@ -1,9 +1,11 @@
 <template>
-  <div class="nav flex-column flex-nowrap vh-100 overflow-auto text-white p-2">
-    <a href="./" class="nav-link">Link</a>
-    <a href="./" class="nav-link">Link</a>
-    <a href="./" class="nav-link">Link</a>
-    <a href="./" class="nav-link">Link</a>
+  <div class="nav flex-column flex-nowrap overflow-auto text-white p-2">
+    <NuxtLink to="/blog">
+      Blog
+    </NuxtLink>
+    <NuxtLink to="/about">
+      About
+    </NuxtLink>
   </div>
 </template>
 
@@ -14,10 +16,11 @@ export default {
 </script>
 
 <style>
-.navbar {
+.nav {
   max-height: 100%;
   min-height: 100vh;
-  align-items: flex-start;
+  background-color:lightseagreen;
+  border-width: 0px;
 }
 
 </style>

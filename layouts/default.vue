@@ -1,8 +1,9 @@
 <template>
   <b-container fluid>
+    <MobileNav />
     <b-row>
       <div class="gutter col-xl-2 col-lg-1 d-none d-sm-none d-md-none d-lg-block" />
-      <div class="d-none d-sm-none d-md-none d-lg-block col-2 px-1 bg-dark position-fixed offset-xl-2 offset-lg-1">
+      <div class="d-none d-sm-none d-md-none d-lg-block col-2 px-1 position-fixed offset-xl-2 offset-lg-1">
         <SideNavbar />
       </div>
       <div class="col-xl-6 col-lg-8 offset-xl-2 offset-lg-2">
@@ -15,10 +16,12 @@
 
 <script>
 import SideNavbar from '../components/SideNavbar'
+import MobileNav from '../components/MobileNav'
 
 export default {
   components: {
-    SideNavbar
+    SideNavbar,
+    MobileNav
   }
 }
 </script>

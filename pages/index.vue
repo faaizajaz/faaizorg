@@ -1,16 +1,13 @@
 <template>
   <div class="home-content">
-    <MyTestComponent />
+    <p>Welcome to faaiz.org</p>
   </div>
 </template>
 
 <script>
-import MyTestComponent from '../components/MyTestComponent'
 
 export default {
-  components: {
-    MyTestComponent
-  }
+
 }
 </script>
 
