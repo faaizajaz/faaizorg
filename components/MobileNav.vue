@@ -8,26 +8,26 @@
 
     <b-collapse id="nav-text-collapse" is-nav>
       <b-navbar-nav>
-        <b-nav-text>
-          <NuxtLink to="/" exact>
+        <b-nav-item class="nav-item-mobile">
+          <NuxtLink to="/" data-toggle="collapse" data-target=".navbar-collapse.show" exact>
             Home
           </NuxtLink>
-        </b-nav-text>
-        <b-nav-text>
-          <NuxtLink to="/projects" exact>
+        </b-nav-item>
+        <b-nav-item class="nav-item-mobile">
+          <NuxtLink to="/projects" data-toggle="collapse" data-target=".navbar-collapse.show" exact>
             Projects
           </NuxtLink>
-        </b-nav-text>
-        <b-nav-text>
-          <NuxtLink to="/blog">
+        </b-nav-item>
+        <b-nav-item class="nav-item-mobile">
+          <NuxtLink to="/blog" data-toggle="collapse" data-target=".navbar-collapse.show">
             Blog
           </NuxtLink>
-        </b-nav-text>
-        <b-nav-text>
-          <NuxtLink to="/about" exact>
+        </b-nav-item>
+        <b-nav-item class="nav-item-mobile">
+          <NuxtLink to="/about" data-toggle="collapse" data-target=".navbar-collapse.show" exact>
             About
           </NuxtLink>
-        </b-nav-text>
+        </b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
@@ -42,7 +42,10 @@ export default {
 <style>
 #mobile-nav {
   background-color: white;
-  padding: 0px 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  padding-left: 15px
 }
 
 .nuxt-link-active {
@@ -54,5 +57,13 @@ export default {
   width: 10vw;
   max-height: 58px;
   max-width: 58px
+}
+
+.nav-item-mobile a {
+  color: black;
+  font-size: 2vh;
+  font-family: 'Bitter', serif;
+  padding-bottom: 5px;
+  padding-top: 0px;
 }
 </style>

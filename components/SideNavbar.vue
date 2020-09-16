@@ -4,22 +4,22 @@
       <img class="portrait" src="~assets/portrait/me.png" alt="">
     </div>
     <ul class="nav flex-column flex-nowrap overflow-auto text-white">
-      <li class="nav-item">
+      <li class="nav-item-regular">
         <NuxtLink to="/" class="nav-link" exact>
           Home
         </NuxtLink>
       </li>
-      <li class="nav-item">
+      <li class="nav-item-regular">
         <NuxtLink to="/projects" class="nav-link" exact>
           Projects
         </NuxtLink>
       </li>
-      <li class="nav-item">
+      <li class="nav-item-regular">
         <NuxtLink to="/blog" class="nav-link">
           Blog
         </NuxtLink>
       </li>
-      <li class="nav-item">
+      <li class="nav-item-regular">
         <NuxtLink to="/about" class="nav-link" exact>
           About
         </NuxtLink>
@@ -53,7 +53,7 @@ export default {
   padding-top: 275px;
 }
 
-.nav-item a {
+.nav-item-regular a {
   color: black;
   font-size: calc(5px + 2.1vw);
   font-family: 'Bitter', serif;
