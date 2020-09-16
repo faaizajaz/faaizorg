@@ -1,14 +1,16 @@
 <template>
   <div class="sidebar-div">
-    <img src="~assets/portrait/me.png" alt="">
+    <div class="portrait-div">
+      <img class="portrait" src="~assets/portrait/me.png" alt="">
+    </div>
     <ul class="nav flex-column flex-nowrap overflow-auto text-white">
       <li class="nav-item">
-        <NuxtLink to="#" class="nav-link">
+        <NuxtLink to="/" class="nav-link" exact>
           Home
         </NuxtLink>
       </li>
       <li class="nav-item">
-        <NuxtLink to="#" class="nav-link">
+        <NuxtLink to="#projects" class="nav-link" exact>
           Projects
         </NuxtLink>
       </li>
@@ -18,15 +20,24 @@
         </NuxtLink>
       </li>
       <li class="nav-item">
-        <NuxtLink to="/about" class="nav-link">
+        <NuxtLink to="/about" class="nav-link" exact>
           About
+        </NuxtLink>
+      </li>
+      <li class="nav-item">
+        <NuxtLink to="#aisha" class="nav-link" exact>
+          Aisha
         </NuxtLink>
       </li>
     </ul>
     <div class="social-icons">
-      <img class="social-icon" src="~assets/svg/linkedin-grey.svg" alt="">
+      <a href="https://www.linkedin.com/in/faaizajaz/">
+        <img class="social-icon" src="~assets/svg/linkedin-grey.svg" alt="LinkedIn">
+      </a>
       <span>&nbsp;</span>
-      <img class="social-icon" src="~assets/svg/icon-at-symbol.svg" alt="">
+      <a href="mailto:faaizajaz@gmail.com">
+        <img class="social-icon" src="~assets/svg/icon-at-symbol.svg" alt="Email">
+      </a>
     </div>
   </div>
 </template>
@@ -38,25 +49,32 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap');
 
 .nav {
 /*   max-height: 100%;
   min-height: 100vh; */
   background-color:white;
   border-width: 0px;
-  padding-top: 45px;
+  padding-top: 275px;
 }
 
 .nav-item a {
   color: black;
-  font-size: 2.8vw;
+  font-size: calc(5px + 2vw);
   font-family: 'Bitter', serif;
 }
 
-img {
+.portrait {
   border-radius: 50%;
-  width: 12vw;
+  width: 11.5vw;
+}
+
+.portrait-div {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  right: 10px;
+  justify-content: center;
 }
 
 .social-icons {
@@ -64,7 +82,7 @@ img {
   display: flex;
   width: 100%;
   bottom: 20px;
-  right: 10px;
+  right: 14px;
   justify-content: center;
 }
 
@@ -77,8 +95,12 @@ img {
   position: relative;
   padding-top: 40px;
   padding-bottom: 20px;
-  padding-left: 15px;
+  padding-left: 25px;
 
 }
+
+/* .nuxt-link-active {
+  background-color:darkolivegreen;
+} */
 
 </style>
