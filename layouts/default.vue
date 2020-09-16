@@ -6,7 +6,7 @@
       <div class="d-none d-sm-none d-md-none d-lg-block col-2 px-1 position-fixed offset-xl-2 offset-lg-1">
         <SideNavbar />
       </div>
-      <div class="col-xl-6 col-lg-8 offset-xl-2 offset-lg-2">
+      <div class="content col-xl-6 col-lg-8 offset-xl-2 offset-lg-2">
         <Nuxt />
       </div>
       <div class="gutter col-xl-2 col-lg-1 d-none d-sm-none d-md-none d-lg-block" />
@@ -44,6 +44,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  overflow-y: scroll;
 }
 
 *,
@@ -54,8 +55,12 @@ html {
 }
 
 .gutter {
-    background-color: green;
+    background-color: white;
     min-height: 100vh;
     max-height: 100%;
+}
+
+.content {
+  padding-left: 0px;
 }
 </style>
