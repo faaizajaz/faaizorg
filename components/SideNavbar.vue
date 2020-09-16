@@ -10,7 +10,7 @@
         </NuxtLink>
       </li>
       <li class="nav-item">
-        <NuxtLink to="#projects" class="nav-link" exact>
+        <NuxtLink to="/projects" class="nav-link" exact>
           Projects
         </NuxtLink>
       </li>
@@ -22,11 +22,6 @@
       <li class="nav-item">
         <NuxtLink to="/about" class="nav-link" exact>
           About
-        </NuxtLink>
-      </li>
-      <li class="nav-item">
-        <NuxtLink to="#aisha" class="nav-link" exact>
-          Aisha
         </NuxtLink>
       </li>
     </ul>
@@ -60,7 +55,7 @@ export default {
 
 .nav-item a {
   color: black;
-  font-size: calc(5px + 2vw);
+  font-size: calc(5px + 2.1vw);
   font-family: 'Bitter', serif;
 }
 
@@ -99,8 +94,8 @@ export default {
 
 }
 
-/* .nuxt-link-active {
+.nuxt-link-active {
   background-color:darkolivegreen;
-} */
+}
 
 </style>
