@@ -8,7 +8,7 @@
       <div class="sidenav-wrapper d-none d-sm-none d-md-none d-lg-block col-2 position-fixed offset-xl-2 offset-lg-1">
         <SideNavbar />
       </div>
-      <div class="content col-xl-6 col-lg-8 offset-xl-2 offset-lg-2">
+      <div class="content col-xl-6 col-lg-8 offset-xl-2 offset-lg-2 pl-md-10 pl-lg-0 pl-xl-0">
         <Nuxt />
       </div>
       <div class="gutter col-xl-2 col-lg-1 d-none d-sm-none d-md-none d-lg-block" />
@@ -44,6 +44,24 @@ html {
   overflow-y: scroll;
 }
 
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  body {
+    padding-top:13vw;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 765px) {
+  body {
+    padding-top:10.5vw;
+  }
+}
+
+@media screen and (min-width: 766px) and (max-width: 992px) {
+  body {
+    padding-top:8vw;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -58,7 +76,7 @@ html {
 }
 
 .content {
-  padding-left: 0px;
+  /* padding-left: 0px; */
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 19px;
 }
