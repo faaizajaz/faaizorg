@@ -67,7 +67,4 @@ export default {
   text-align: left;
 }
 
-.nuxt-link-exact-active {
-  background-color: darkolivegreen;
-}
 </style>

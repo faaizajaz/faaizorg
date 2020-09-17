@@ -1,8 +1,6 @@
 <template>
   <b-container fluid>
-    <div class="mobile-nav-div">
-      <MobileNav />
-    </div>
+    <MobileNav />
     <b-row>
       <div class="gutter col-xl-2 col-lg-1 d-none d-sm-none d-md-none d-lg-block" />
       <div class="sidenav-wrapper d-none d-sm-none d-md-none d-lg-block col-2 position-fixed offset-xl-2 offset-lg-1">
@@ -44,21 +42,27 @@ html {
   overflow-y: scroll;
 }
 
-@media screen and (min-width: 0px) and (max-width: 500px) {
+@media screen and (min-width: 0px) and (max-width: 280px) {
   body {
-    padding-top:13vw;
+    padding-top:16.5vw;
+  }
+}
+
+@media screen and (min-width: 281px) and (max-width: 500px) {
+  body {
+    padding-top:13.5vw;
   }
 }
 
 @media screen and (min-width: 501px) and (max-width: 765px) {
   body {
-    padding-top:10.5vw;
+    padding-top:12vw;
   }
 }
 
 @media screen and (min-width: 766px) and (max-width: 992px) {
   body {
-    padding-top:8vw;
+    padding-top:9vw;
   }
 }
 
