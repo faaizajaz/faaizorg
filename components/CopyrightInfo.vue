@@ -16,7 +16,7 @@ export default {
   justify-content: center;
   font-family: 'Source Sans Pro', sans-serif;
   color: grey;
-  font-size: 0.8vw;
+  font-size: 10px;
 }
 
 </style>

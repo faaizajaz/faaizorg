@@ -1,7 +1,7 @@
 <template>
   <div id="mobile-nav-div">
     <b-navbar id="mobile-nav" class="d-lg-none fixed-top" toggleable="lg">
-      <b-navbar-toggle id="btm-mobile-nav-collapse" target="nav-text-collapse" />
+      <b-navbar-toggle id="btn-mobile-nav-collapse" target="nav-text-collapse" />
 
       <b-navbar-brand>
         <img class="portrait-mobile" src="~assets/portrait/me.png" alt="">
@@ -40,7 +40,7 @@ export default {
   padding-bottom: 0px;
   padding-right: 0px;
   padding-left: 15px;
-  border: 1px solid black;
+  border-bottom: 1px dashed black;
 }
 
 .portrait-mobile {
@@ -53,9 +53,9 @@ export default {
 }
 
 #btn-mobile-nav-collapse {
-  width: 10vw;
   max-height: 58px;
   max-width: 58px;
+  border: 0px;
 }
 
 .nav-item-mobile.nav-link {
@@ -68,6 +68,11 @@ export default {
 
 .nav-item-mobile.nuxt-link-active {
   background-color: white;
+}
+
+.navbar-toggler-icon {
+  background-image: url("~assets/svg/hamburger.svg") !important;
+  min-height: 35px;
 }
 
 </style>
