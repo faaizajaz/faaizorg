@@ -79,10 +79,10 @@ html {
     max-height: 100%;
 }
 
+/*TODO: add some media rules for font size*/
 .content {
   /* padding-left: 0px; */
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 19px;
 }
 
 .sidenav-wrapper {
