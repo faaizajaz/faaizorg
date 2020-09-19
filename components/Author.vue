@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h5>Author</h5>
-    <span>{{ author.name }}</span>
-    <p>{{ author.bio }}</p>
+    <div id="author">
+      <span>Posted by: {{ author.name }} on {{ updated }}</span>
+    </div>
   </div>
 </template>
 
@@ -12,7 +12,19 @@ export default {
     author: {
       type: Object,
       required: true
+    },
+    updated: {
+      type: String,
+      default: () => null
     }
   }
 }
 </script>
+
+<style scoped>
+#author {
+  width: 100%;
+  text-align: right;
+}
+
+</style>

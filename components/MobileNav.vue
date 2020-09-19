@@ -10,7 +10,7 @@
       <b-collapse id="nav-text-collapse" is-nav>
         <b-navbar-nav>
           <NuxtLink class="nav-item-mobile nav-link" to="/" data-toggle="collapse" data-target=".navbar-collapse.show" exact>
-            Home
+            About
           </NuxtLink>
           <NuxtLink class="nav-item-mobile nav-link" to="/projects" data-toggle="collapse" data-target=".navbar-collapse.show" exact>
             Projects
@@ -18,8 +18,8 @@
           <NuxtLink class="nav-item-mobile nav-link" to="/blog" data-toggle="collapse" data-target=".navbar-collapse.show">
             Blog
           </NuxtLink>
-          <NuxtLink class="nav-item-mobile nav-link" to="/about" data-toggle="collapse" data-target=".navbar-collapse.show" exact>
-            About
+          <NuxtLink class="nav-item-mobile nav-link" to="/resume" data-toggle="collapse" data-target=".navbar-collapse.show" exact>
+            Résumé
           </NuxtLink>
         </b-navbar-nav>
       </b-collapse>

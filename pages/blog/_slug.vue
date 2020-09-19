@@ -1,5 +1,10 @@
 <template>
   <div>
+    <h1 class="page-heading">
+      {{ blogPost.title }}
+    </h1>
+    <hr>
+    <Author :author="blogPost.author" :updated="formatDate(blogPost.updatedAt)" />
     <nav>
       <ul>
         <li v-for="link in blogPost.toc" :key="link.id">
@@ -9,14 +14,7 @@
         </li>
       </ul>
     </nav>
-    <Author :author="blogPost.author" />
     <PrevNext :prev="prev" :next="next" />
-    <h1>
-      {{ blogPost.title }}
-    </h1>
-    <p class="">
-      Updated: {{ formatDate(blogPost.updatedAt) }}
-    </p>
     <nuxt-content class="blog-post" :document="blogPost" />
   </div>
 </template>
@@ -59,12 +57,18 @@ export default {
 }
 
 .blog-post {
-  margin: 0 auto;
-  /* min-height: 100vh; */
-  display: flex;
-  justify-content: left;
-  align-items: top;
-  text-align: justify;
+  text-align: left;
 }
 
+.page-heading {
+  font-family: 'Bitter', serif;
+  text-align: left;
+}
+
+hr {
+  border-top: 1px solid lightgrey ;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
 </style>

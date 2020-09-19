@@ -1,5 +1,9 @@
 <template>
-  <div class="blog-home-content">
+  <div id="blog-home-content">
+    <h1 class="page-heading">
+      Blog
+    </h1>
+    <hr>
     <ul>
       <li v-for="post in allPosts" :key="post.slug">
         <NuxtLink :to="{ name: 'blog-slug', params: { slug: post.slug }}">
@@ -28,6 +32,25 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+/* #blog-home-content {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: left;
+  align-items: top;
+  text-align: left;
+} */
+
+.page-heading {
+  font-family: 'Bitter', serif;
+  text-align: left;
+}
+
+hr {
+  border-top: 1px solid lightgrey ;
+  width: 100%;
+  margin-top: 0px;
+}
 
 </style>
