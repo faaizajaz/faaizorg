@@ -62,10 +62,10 @@ export default {
 
 .nav-item-mobile.nav-link {
   color: black !important;
-  font-size: 2vh;
+  font-size: 20px;
   font-family: 'Bitter', serif;
   padding-bottom: 5px;
-  padding-top: 0px;
+  padding-top: 5px;
 }
 
 .nav-item-mobile.nuxt-link-active {
