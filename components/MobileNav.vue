@@ -45,11 +45,8 @@ export default {
 
 .portrait-mobile {
   border-radius: 50%;
-  width: 10vw;
-  max-height: 58px;
-  max-width: 58px;
-  min-height: 35px;
-  min-width: 35px;
+  width: 37px;
+  height: 37px;
 }
 
 #btn-mobile-nav-collapse {
@@ -67,7 +64,7 @@ export default {
 }
 
 .nav-item-mobile.nuxt-link-active {
-  background-color: white;
+  color: #3399cc !important;
 }
 
 .navbar-toggler-icon {

@@ -90,8 +90,7 @@ export default {
 }
 
 .nuxt-link-active {
-  color: blue !important;
-  text-decoration: underline !important;
+  color: #3399cc !important;
 }
 
 </style>
