@@ -17,7 +17,7 @@
     <p class="">
       Updated: {{ formatDate(blogPost.updatedAt) }}
     </p>
-    <nuxt-content :document="blogPost" />
+    <nuxt-content class="blog-post" :document="blogPost" />
   </div>
 </template>
 
@@ -64,7 +64,7 @@ export default {
   display: flex;
   justify-content: left;
   align-items: top;
-  text-align: left;
+  text-align: justify;
 }
 
 </style>

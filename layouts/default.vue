@@ -74,6 +74,12 @@ html {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+@media screen and (min-width: 992px) {
+  .content {
+    padding-top:80px;
+  }
+}
+
 .sidenav-wrapper {
   padding-right: 0px;
 }
