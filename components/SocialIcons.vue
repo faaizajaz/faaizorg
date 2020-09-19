@@ -1,0 +1,38 @@
+<template>
+  <div class="social-icons">
+    <a href="https://www.github.com/faaizajaz/">
+      <img class="social-icon" src="~assets/svg/github-logo.svg" alt="GitHub">
+    </a>
+    <span>&nbsp;</span>
+    <span>&nbsp;</span>
+    <a href="https://www.linkedin.com/in/faaizajaz/">
+      <img class="social-icon" src="~assets/svg/linkedin-black.svg" alt="LinkedIn">
+    </a>
+    <span>&nbsp;</span>
+    <span>&nbsp;</span>
+    <a href="mailto:faaizajaz@gmail.com">
+      <img class="social-icon" src="~assets/svg/at-symbol.svg" alt="Email">
+    </a>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'SocialIcons'
+}
+</script>
+
+<style>
+.social-icons {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  bottom: 50px;
+  right: 14px;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 20px;
+}
+</style>
