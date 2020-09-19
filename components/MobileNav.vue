@@ -40,7 +40,7 @@ export default {
   padding-bottom: 0px;
   padding-right: 0px;
   padding-left: 15px;
-  border-bottom: 1px dashed black;
+  border-bottom: 1px solid #cccccc;
 }
 
 .portrait-mobile {
@@ -53,6 +53,11 @@ export default {
   max-height: 58px;
   max-width: 58px;
   border: 0px;
+  padding-left: 0px;
+}
+
+#btn-mobile-nav-collapse {
+  outline: 0px;
 }
 
 .nav-item-mobile.nav-link {
