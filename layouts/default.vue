@@ -49,27 +49,9 @@ html {
   overflow-y: scroll;
 }
 
-@media screen and (min-width: 0px) and (max-width: 280px) {
+@media screen and (max-width: 992px) {
   body {
-    padding-top:16.5vw;
-  }
-}
-
-@media screen and (min-width: 281px) and (max-width: 500px) {
-  body {
-    padding-top:13.5vw;
-  }
-}
-
-@media screen and (min-width: 501px) and (max-width: 765px) {
-  body {
-    padding-top:12vw;
-  }
-}
-
-@media screen and (min-width: 766px) and (max-width: 992px) {
-  body {
-    padding-top:9vw;
+    padding-top:48px;
   }
 }
 
