@@ -25,22 +25,8 @@
         </NuxtLink>
       </li>
     </ul>
-    <div class="social-icons">
-      <a href="https://www.github.com/faaizajaz/">
-        <img class="social-icon" src="~assets/svg/github-logo.svg" alt="GitHub">
-      </a>
-      <span>&nbsp;</span>
-      <span>&nbsp;</span>
-      <a href="https://www.linkedin.com/in/faaizajaz/">
-        <img class="social-icon" src="~assets/svg/linkedin-grey.svg" alt="LinkedIn">
-      </a>
-      <span>&nbsp;</span>
-      <span>&nbsp;</span>
-      <a href="mailto:faaizajaz@gmail.com">
-        <img class="social-icon" src="~assets/svg/at-symbol.svg" alt="Email">
-      </a>
-    </div>
-    <div>
+    <div id="sidebar-footer">
+      <SocialIcons />
       <CopyrightInfo />
     </div>
   </div>
@@ -48,11 +34,13 @@
 
 <script>
 import CopyrightInfo from '../components/CopyrightInfo'
+import SocialIcons from '../components/SocialIcons'
 
 export default {
   name: 'SideNavbar',
   components: {
-    CopyrightInfo
+    CopyrightInfo,
+    SocialIcons
   }
 }
 </script>
@@ -86,19 +74,6 @@ export default {
   justify-content: center;
 }
 
-.social-icons {
-  position: absolute;
-  display: flex;
-  width: 100%;
-  bottom: 50px;
-  right: 14px;
-  justify-content: center;
-}
-
-.social-icon {
-  width: 20px;
-}
-
 #sidebar-div {
   min-height: 100vh;
   position: relative;
@@ -115,7 +90,8 @@ export default {
 }
 
 .nuxt-link-active {
-  background-color:white;
+  color: blue !important;
+  text-decoration: underline !important;
 }
 
 </style>
