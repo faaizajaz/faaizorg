@@ -22,16 +22,23 @@ export default {
   components: {
     SideNavbar,
     MobileNav
+  },
+  head: {
+    link: [
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Source+Sans+Pro&display=swap'
+      }
+    ]
   }
 }
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Source+Sans+Pro&display=swap');
 
 html {
   font-family: 'Bitter', serif;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
