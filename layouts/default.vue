@@ -82,6 +82,8 @@ html {
 
 .sidenav-wrapper {
   padding-right: 0px;
+  min-height: 100vh;
+  padding-top: 50px;
 }
 
 </style>

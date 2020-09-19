@@ -1,5 +1,5 @@
 <template>
-  <div id="sidebar-div">
+  <span>
     <div class="portrait-div">
       <img class="portrait" src="~assets/portrait/me.png" alt="">
     </div>
@@ -29,7 +29,7 @@
       <SocialIcons />
       <CopyrightInfo />
     </div>
-  </div>
+  </span>
 </template>
 
 <script>
@@ -74,20 +74,20 @@ export default {
   justify-content: center;
 }
 
-#sidebar-div {
+/* #sidebar-div {
   min-height: 100vh;
   position: relative;
   padding-top: 40px;
   padding-bottom: 20px;
   padding-left: 25px;
 
-}
+} */
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
   #sidebar-div {
     padding-left:15px;
   }
-}
+} */
 
 .nuxt-link-active {
   color: #3399cc !important;
