@@ -25,6 +25,8 @@ export default {
 #author {
   width: 100%;
   text-align: right;
+  color: grey;
+  font-style: italic;
 }
 
 </style>
