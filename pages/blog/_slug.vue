@@ -12,7 +12,7 @@
         <ul class="toc-ul">
           <li v-for="link in blogPost.toc" :key="link.id">
             <NuxtLink :to="`#${link.id}`" class="toc-link" :class="{ 'l1': link.depth === 2, 'l2': link.depth === 3}">
-              {{ link.text }}
+              <img class="inline-hashtag" src="~assets/svg/icon-hashtag.svg">{{ link.text }}
             </NuxtLink>
           </li>
         </ul>
@@ -101,11 +101,19 @@ hr {
   text-decoration: underline;
 }
 
+.l1 .inline-hashtag {
+  width: 20px;
+}
+
 .l2 {
   padding-left: 16px;
   font-size: 16px;
   text-decoration: underline;
   text-decoration-style: solid;
+}
+
+.l2 .inline-hashtag {
+  width: 16px;
 }
 
 #toc-title {

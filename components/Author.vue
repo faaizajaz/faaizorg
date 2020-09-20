@@ -1,7 +1,7 @@
 <template>
   <div>
     <div id="author">
-      <span>Posted by: {{ author.name }} on {{ created }}</span>
+      <span>by {{ author.name }} on {{ created }}</span>
     </div>
   </div>
 </template>
@@ -27,6 +27,7 @@ export default {
   text-align: right;
   color: grey;
   font-style: italic;
+  font-size: 14px;
 }
 
 </style>
