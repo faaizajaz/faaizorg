@@ -3,6 +3,7 @@
     <h1 class="page-heading">
       {{ blogPost.title }}
     </h1>
+    <hr>
     <nav>
       <div class="toc">
         <p id="toc-title">
@@ -88,6 +89,7 @@ hr {
   list-style-type: none;
   border-radius: 5px;
   margin-bottom: 13px;
+  margin-top: 7px;
 
 }
 
