@@ -104,7 +104,6 @@ hr {
 
 .l1 {
   font-size: 20px;
-  text-decoration: underline;
 }
 
 .l1 .inline-hashtag {
@@ -114,7 +113,6 @@ hr {
 .l2 {
   padding-left: 16px;
   font-size: 16px;
-  text-decoration: underline;
   text-decoration-style: solid;
 }
 

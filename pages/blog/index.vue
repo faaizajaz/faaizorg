@@ -53,4 +53,9 @@ hr {
   padding-right: 5px;
 }
 
+#blog-home-list li a {
+  color: #3399cc;
+  font-weight: bold;
+}
+
 </style>

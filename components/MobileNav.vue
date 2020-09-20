@@ -70,6 +70,7 @@ export default {
 
 .nav-item-mobile.nuxt-link-active {
   color: #3399cc !important;
+  text-decoration: underline !important;
 }
 
 .navbar-toggler-icon {
