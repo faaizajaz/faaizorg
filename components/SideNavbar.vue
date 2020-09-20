@@ -89,9 +89,23 @@ export default {
   }
 }
 
-.nuxt-link-active {
+.nav-item-regular .nuxt-link-active {
   color: #3399cc !important;
-  text-decoration: underline !important;
+  border-left: 10px solid #3399cc;
+/*   padding-top: 0px;
+  padding-bottom: 0px; */
 }
 
+/* @keyframes example {
+  from {padding-left: 40px;}
+  to {padding-left: 50px;}
+}
+:not(.nuxt-link-active).nav-link:hover {
+  animation-name: example;
+  animation-duration: 50ms;
+  animation-fill-mode: forwards
+} */
+.nav-link:hover {
+  color: #3399cc;
+}
 </style>
