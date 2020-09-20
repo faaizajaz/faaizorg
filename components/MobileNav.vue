@@ -2,11 +2,11 @@
   <div id="mobile-nav-div">
     <b-navbar id="mobile-nav" class="d-lg-none fixed-top" toggleable="lg">
       <b-navbar-toggle id="btn-mobile-nav-collapse" target="nav-text-collapse" />
-
+      <span class="mobile-nav-title">Faaiz Ajaz</span>
       <b-navbar-brand>
-        <img class="portrait-mobile" src="~assets/portrait/me.png" alt="">
+        <!-- <span class="mobile-nav-title">Faaiz Ajaz</span> -->
+        <img class="portrait-mobile" src="~assets/portrait/me.png">
       </b-navbar-brand>
-
       <b-collapse id="nav-text-collapse" is-nav>
         <b-navbar-nav>
           <NuxtLink class="nav-item-mobile nav-link" to="/" data-toggle="collapse" data-target=".navbar-collapse.show" exact>
@@ -76,6 +76,10 @@ export default {
 .navbar-toggler-icon {
   background-image: url("~assets/svg/hamburger.svg") !important;
   min-height: 35px;
+}
+
+.mobile-nav-title {
+  font-family: 'Bitter', serif;
 }
 
 </style>

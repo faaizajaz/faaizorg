@@ -3,7 +3,7 @@
     <h1 class="page-heading">
       {{ blogPost.title }}
     </h1>
-    <hr>
+    <BarDivider />
     <nav>
       <div class="toc">
         <ul class="toc-ul">
@@ -15,16 +15,21 @@
         </ul>
       </div>
     </nav>
-    <hr>
+    <hr class="hr-lowmb">
     <Author :author="blogPost.author" :created="formatDate(blogPost.createdAt)" />
     <nuxt-content class="blog-post" :document="blogPost" />
-    <hr>
+    <hr class="hr-1px">
     <PrevNext :prev="prev" :next="next" />
   </div>
 </template>
 
 <script>
+import BarDivider from '../../components/BarDivider'
+
 export default {
+  components: {
+    BarDivider
+  },
   async asyncData ({ $content, params }) {
     const blogPost = await $content('blog', params.slug).fetch()
     const [prev, next] = await $content('blog')
@@ -67,13 +72,6 @@ export default {
 .page-heading {
   font-family: 'Bitter', serif;
   text-align: left;
-}
-
-hr {
-  border-top: 1px solid lightgrey ;
-  width: 100%;
-  margin-top: 0px;
-  margin-bottom: 5px;
 }
 
 .toc {
@@ -123,4 +121,14 @@ hr {
   font-weight: bold;
 }
 
+.hr-1px {
+  border-top: 1px solid lightgrey ;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.hr-lowmb {
+  margin-bottom: 7px;
+  margin-top: 0px;
+}
 </style>

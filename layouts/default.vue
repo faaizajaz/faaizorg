@@ -29,7 +29,8 @@ export default {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Source+Sans+Pro&display=swap'
       }
-    ]
+    ],
+    title: 'Faaiz Ajaz'
   }
 }
 </script>

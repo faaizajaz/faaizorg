@@ -3,13 +3,17 @@
     <h1 class="page-heading">
       Resume
     </h1>
-    <hr>
+    <BarDivider />
   </div>
 </template>
 
 <script>
-export default {
+import BarDivider from '../components/BarDivider'
 
+export default {
+  components: {
+    BarDivider
+  }
 }
 </script>
 
@@ -17,13 +21,6 @@ export default {
 .page-heading {
   font-family: 'Bitter', serif;
   text-align: left;
-}
-
-hr {
-  border-top: 1px solid lightgrey ;
-  width: 100%;
-  margin-top: 0px;
-  margin-bottom: 5px;
 }
 
 </style>

@@ -3,14 +3,17 @@
     <h1 class="page-heading">
       About me
     </h1>
-    <hr>
+    <BarDivider />
   </div>
 </template>
 
 <script>
+import BarDivider from '../components/BarDivider'
 
 export default {
-
+  components: {
+    BarDivider
+  }
 }
 </script>
 
@@ -29,9 +32,4 @@ export default {
   text-align: left;
 }
 
-hr {
-  border-top: 1px solid lightgrey ;
-  width: 100%;
-  margin-top: 0px;
-}
 </style>

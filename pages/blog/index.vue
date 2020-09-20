@@ -3,9 +3,9 @@
     <h1 class="page-heading">
       Blog
     </h1>
-    <hr>
+    <BarDivider />
     <p>
-      This is my blog. Maybe I'll post things here, maybe I wont.
+      This is my blog. Maybe I'll post things here, maybe I won't.
     </p>
     <ul id="blog-home-list">
       <li v-for="post in allPosts" :key="post.slug">
@@ -13,14 +13,19 @@
           <h5>{{ post.title }}</h5>
         </NuxtLink>
         <span>{{ post.description }}</span>
-        <hr>
+        <hr class="hr-1px">
       </li>
     </ul>
   </div>
 </template>
 
 <script>
+import BarDivider from '../../components/BarDivider'
+
 export default {
+  components: {
+    BarDivider
+  },
   async asyncData ({ $content, params }) {
     const allPosts = await $content('blog')
       .only(['title', 'description', 'img', 'slug', 'author'])
@@ -41,7 +46,7 @@ export default {
   text-align: left;
 }
 
-hr {
+.hr-1px {
   border-top: 1px solid lightgrey ;
   width: 100%;
   margin-top: 0px;
