@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="blog-body">
     <h1 class="page-heading">
       {{ blogPost.title }}
     </h1>
@@ -51,6 +51,10 @@ export default {
 </script>
 
 <style>
+#blog-body {
+  margin-bottom:250px;
+}
+
 .icon.icon-link {
   background-image: url('~assets/svg/icon-hashtag.svg');
   display: inline-block;
@@ -94,6 +98,7 @@ hr {
 
 .toc-link {
   color: #3399cc;
+  font-weight: bold;
 }
 
 .l1 {
