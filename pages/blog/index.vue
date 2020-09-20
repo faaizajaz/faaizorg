@@ -33,14 +33,6 @@ export default {
 </script>
 
 <style scoped>
-/* #blog-home-content {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: left;
-  align-items: top;
-  text-align: left;
-} */
 
 .page-heading {
   font-family: 'Bitter', serif;

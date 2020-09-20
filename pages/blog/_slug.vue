@@ -19,7 +19,7 @@
       </div>
     </nav>
     <hr>
-    <Author :author="blogPost.author" :updated="formatDate(blogPost.updatedAt)" />
+    <Author :author="blogPost.author" :created="formatDate(blogPost.createdAt)" />
     <nuxt-content class="blog-post" :document="blogPost" />
     <hr>
     <PrevNext :prev="prev" :next="next" />
@@ -82,7 +82,7 @@ hr {
   width: 100%;
   padding: 10px 15px;
   list-style-type: none;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 13px;
 
 }
@@ -99,14 +99,13 @@ hr {
 .l1 {
   font-size: 20px;
   text-decoration: underline;
-  text-decoration-style: single;
 }
 
 .l2 {
   padding-left: 16px;
   font-size: 16px;
   text-decoration: underline;
-  text-decoration-style: dotted;
+  text-decoration-style: solid;
 }
 
 #toc-title {

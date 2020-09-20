@@ -1,7 +1,7 @@
 <template>
   <div>
     <div id="author">
-      <span>Posted by: {{ author.name }} on {{ updated }}</span>
+      <span>Posted by: {{ author.name }} on {{ created }}</span>
     </div>
   </div>
 </template>
@@ -13,7 +13,7 @@ export default {
       type: Object,
       required: true
     },
-    updated: {
+    created: {
       type: String,
       default: () => null
     }
