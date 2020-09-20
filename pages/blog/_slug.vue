@@ -86,7 +86,6 @@ hr {
   min-width: 150px;
   width: 100%;
   padding: 10px 15px;
-  list-style-type: none;
   border-radius: 5px;
   margin-bottom: 13px;
   margin-top: 7px;

@@ -4,13 +4,15 @@
       Blog
     </h1>
     <hr>
-    <ul>
+    <p>
+      This is my blog. Maybe I'll use it, maybe I won't.
+    </p>
+    <ul id="blog-home-list">
       <li v-for="post in allPosts" :key="post.slug">
         <NuxtLink :to="{ name: 'blog-slug', params: { slug: post.slug }}">
           <h5>{{ post.title }}</h5>
-          <span>by {{ post.author.name }}</span>
-          <span>{{ post.description }}</span>
         </NuxtLink>
+        <span>{{ post.description }}</span>
         <hr>
       </li>
     </ul>
@@ -43,6 +45,12 @@ hr {
   border-top: 1px solid lightgrey ;
   width: 100%;
   margin-top: 0px;
+}
+
+#blog-home-list {
+  list-style-type: none;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 </style>
