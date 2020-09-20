@@ -83,11 +83,11 @@ export default {
 
 } */
 
-/* @media screen and (max-width: 1200px) {
-  #sidebar-div {
-    padding-left:15px;
+@media screen and (min-width: 1300px) {
+  a.nav-link {
+    padding-left:40px;
   }
-} */
+}
 
 .nuxt-link-active {
   color: #3399cc !important;
