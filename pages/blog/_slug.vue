@@ -6,14 +6,10 @@
     <hr>
     <nav>
       <div class="toc">
-        <p id="toc-title">
-          Table of contents:
-        </p>
-        <hr>
         <ul class="toc-ul">
           <li v-for="link in blogPost.toc" :key="link.id">
             <NuxtLink :to="`#${link.id}`" class="toc-link" :class="{ 'l1': link.depth === 2, 'l2': link.depth === 3}">
-              <img class="inline-hashtag" src="~assets/svg/icon-hashtag.svg">{{ link.text }}
+              {{ link.text }}
             </NuxtLink>
           </li>
         </ul>
@@ -85,7 +81,8 @@ hr {
   display: inline-block;
   min-width: 150px;
   width: 100%;
-  padding: 10px 15px;
+  padding:10px 15px;
+  padding-bottom: 0px;
   border-radius: 5px;
   margin-bottom: 13px;
   margin-top: 7px;
@@ -107,17 +104,17 @@ hr {
 }
 
 .l1 .inline-hashtag {
-  width: 20px;
+  height: 18px;
 }
 
 .l2 {
-  padding-left: 16px;
+  padding-left: 13px;
   font-size: 16px;
   text-decoration-style: solid;
 }
 
 .l2 .inline-hashtag {
-  width: 16px;
+  height: 14px;
 }
 
 #toc-title {

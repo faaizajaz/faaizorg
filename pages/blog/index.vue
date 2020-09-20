@@ -5,7 +5,7 @@
     </h1>
     <hr>
     <p>
-      This is my blog. Maybe I'll use it, maybe I won't.
+      This is my blog. Maybe I'll post things here, maybe I wont.
     </p>
     <ul id="blog-home-list">
       <li v-for="post in allPosts" :key="post.slug">
