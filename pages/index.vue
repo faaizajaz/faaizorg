@@ -4,6 +4,18 @@
       About me
     </h1>
     <BarDivider />
+    <div>
+      <h2>My name is Faaiz</h2>
+      <p>
+        Faaiz rhymes with:
+        <ul>
+          <li>eyes</li>
+          <li>thighs</li>
+          <li>spies</li>
+          <li>lies</li>
+        </ul>
+      </p>
+    </div>
   </div>
 </template>
 

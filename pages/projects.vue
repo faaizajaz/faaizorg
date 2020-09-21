@@ -4,6 +4,12 @@
       Projects
     </h1>
     <BarDivider />
+    <div>
+      <h2>Believe me</h2>
+      <p>
+        There are a few.
+      </p>
+    </div>
   </div>
 </template>
 

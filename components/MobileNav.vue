@@ -18,8 +18,8 @@
           <NuxtLink class="nav-item-mobile nav-link" to="/blog" data-toggle="collapse" data-target=".navbar-collapse.show">
             Blog
           </NuxtLink>
-          <NuxtLink class="nav-item-mobile nav-link" to="/resume" data-toggle="collapse" data-target=".navbar-collapse.show" exact>
-            Résumé
+          <NuxtLink class="nav-item-mobile nav-link" to="/cv" data-toggle="collapse" data-target=".navbar-collapse.show" exact>
+            CV
           </NuxtLink>
         </b-navbar-nav>
       </b-collapse>

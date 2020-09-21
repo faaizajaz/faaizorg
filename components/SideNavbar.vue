@@ -20,8 +20,8 @@
         </NuxtLink>
       </li>
       <li class="nav-item-regular">
-        <NuxtLink to="/resume" class="nav-link" exact>
-          Résumé
+        <NuxtLink to="/cv" class="nav-link" exact>
+          CV
         </NuxtLink>
       </li>
     </ul>

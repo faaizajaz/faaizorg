@@ -1,9 +1,15 @@
 <template>
   <div>
     <h1 class="page-heading">
-      Resume
+      CV
     </h1>
     <BarDivider />
+    <div>
+      <h2>I promise</h2>
+      <p>
+        My CV will be here eventually.
+      </p>
+    </div>
   </div>
 </template>
 
