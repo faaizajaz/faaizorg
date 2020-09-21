@@ -97,12 +97,24 @@ export default {
   font-weight: bold;
 }
 
+@media screen and (max-width: 1280px) {
+  .l1 {
+    font-size: 26px !important;
+  }
+}
+
 .l1 {
   font-size: 20px;
 }
 
 .l1 .inline-hashtag {
   height: 18px;
+}
+
+@media screen and (max-width: 1280px) {
+  .l2 {
+    font-size: 22px !important;
+  }
 }
 
 .l2 {
