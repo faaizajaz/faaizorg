@@ -74,6 +74,12 @@ export default {
   text-align: left;
 }
 
+@media screen and (max-width: 992px) {
+  h1.page-heading {
+    font-size: 24px !important;
+  }
+}
+
 .toc {
   background-color: #ededed;
   display: inline-block;
@@ -94,17 +100,17 @@ export default {
 
 .toc-link {
   color: #3399cc;
-  font-weight: bold;
-}
+  }
 
 @media screen and (max-width: 1280px) {
   .l1 {
-    font-size: 26px !important;
+    font-size: 24px !important;
   }
 }
 
 .l1 {
   font-size: 20px;
+  font-weight: bold;
 }
 
 .l1 .inline-hashtag {
@@ -113,7 +119,7 @@ export default {
 
 @media screen and (max-width: 1280px) {
   .l2 {
-    font-size: 22px !important;
+    font-size: 20px !important;
   }
 }
 

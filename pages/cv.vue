@@ -29,4 +29,10 @@ export default {
   text-align: left;
 }
 
+@media screen and (max-width: 992px) {
+  h1.page-heading {
+    font-size: 24px !important;
+  }
+}
+
 </style>
