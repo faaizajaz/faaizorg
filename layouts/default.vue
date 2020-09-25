@@ -3,10 +3,10 @@
     <MobileNav />
     <b-row>
       <div class="gutter col-xl-2 col-lg-1 d-none d-sm-none d-md-none d-lg-block" />
-      <div class="sidenav-wrapper d-none d-sm-none d-md-none d-lg-block col-2 position-fixed offset-xl-2 offset-lg-1">
+      <div class="sidenav-wrapper d-none d-sm-none d-md-none d-lg-block col-1 position-fixed offset-xl-2 offset-lg-1">
         <SideNavbar />
       </div>
-      <div class="content col-xl-6 col-lg-8 offset-xl-2 offset-lg-2 pl-md-10 pl-lg-0 pl-xl-0">
+      <div class="content col-xl-7 col-lg-9 offset-xl-1 offset-lg-1">
         <Nuxt />
       </div>
       <div class="gutter col-xl-2 col-lg-1 d-none d-sm-none d-md-none d-lg-block" />
@@ -71,7 +71,6 @@ html {
 
 /*TODO: add some media rules for font size*/
 .content {
-  /* padding-left: 0px; */
   font-family: 'Source Sans Pro', sans-serif;
 }
 
