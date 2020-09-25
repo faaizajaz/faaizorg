@@ -72,17 +72,18 @@ html {
 /*TODO: add some media rules for font size*/
 .content {
   font-family: 'Source Sans Pro', sans-serif;
-  padding-left: 25px !important;
 }
 
 @media screen and (max-width: 991px) {
   .content {
     padding-top:8px;
+    padding-left: 15px !important;
   }
 }
 @media screen and (min-width: 992px) {
   .content {
     padding-top:26px;
+    padding-left: 25px !important;
   }
 }
 
