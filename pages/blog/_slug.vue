@@ -74,7 +74,7 @@ export default {
   text-align: left;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   h1.page-heading {
     font-size: 24px !important;
   }

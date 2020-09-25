@@ -50,7 +50,7 @@ html {
   overflow-y: scroll;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   body {
     padding-top:48px;
   }
@@ -72,9 +72,10 @@ html {
 /*TODO: add some media rules for font size*/
 .content {
   font-family: 'Source Sans Pro', sans-serif;
+  padding-left: 25px !important;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .content {
     padding-top:8px;
   }
