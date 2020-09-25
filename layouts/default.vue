@@ -56,6 +56,10 @@ html {
   }
 }
 
+body {
+  font-size: 13pt;
+}
+
 *,
 *::before,
 *::after {

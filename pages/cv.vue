@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="page-heading">
-      CV
+      Curriculum Vitae
     </h1>
     <BarDivider />
     <div>
