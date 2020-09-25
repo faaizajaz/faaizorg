@@ -27,12 +27,12 @@ export default {
   position: absolute;
   display: flex;
   width: 100%;
-  bottom: 50px;
+  bottom: 20px;
   right: 14px;
   justify-content: center;
 }
 
 .social-icon {
-  width: 20px;
+  width: calc(5px + 1vw);
 }
 </style>

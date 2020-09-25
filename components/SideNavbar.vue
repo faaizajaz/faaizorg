@@ -27,19 +27,16 @@
     </ul>
     <div id="sidebar-footer">
       <SocialIcons />
-      <CopyrightInfo />
     </div>
   </span>
 </template>
 
 <script>
-import CopyrightInfo from '../components/CopyrightInfo'
 import SocialIcons from '../components/SocialIcons'
 
 export default {
   name: 'SideNavbar',
   components: {
-    CopyrightInfo,
     SocialIcons
   }
 }
@@ -52,25 +49,38 @@ export default {
   min-height: 100vh; */
   background-color:white;
   border-width: 0px;
-  padding-top: 275px;
+  padding-top: 50px;
 }
 
 .nav-item-regular a {
   color: black;
-  font-size: calc(5px + 1.9vw);
   font-family: 'Bitter', serif;
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-item-regular a {
+    font-size: 1.70vw;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .nav-item-regular a {
+    font-size: 1.60vw;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
 
 .portrait {
   border-radius: 50%;
-  width: 11.5vw;
+  width: 100%;
 }
 
 .portrait-div {
-  position: absolute;
+  /* position: absolute; */
   display: flex;
   width: 100%;
-  right: 10px;
+  /* right: 10px; */
   justify-content: center;
 }
 
@@ -83,15 +93,19 @@ export default {
 
 } */
 
-@media screen and (min-width: 1300px) {
+/* @media screen and (min-width: 1300px) {
   a.nav-link {
     padding-left:40px;
   }
+} */
+
+a.nav-link {
+  padding-left: 5px;
 }
 
 .nav-item-regular .nuxt-link-active {
   color: #3399cc !important;
-  border-left: 10px solid #3399cc;
+  /* border-left: 10px solid #3399cc; */
 /*   padding-top: 0px;
   padding-bottom: 0px; */
 }
@@ -108,4 +122,15 @@ export default {
 .nav-link:hover {
   color: #3399cc;
 }
+
+#sidebar-footer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom:5px;
+  height: auto;
+  width: 100%;
+  padding-left: 15px;
+}
+
 </style>

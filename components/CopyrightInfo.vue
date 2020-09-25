@@ -1,6 +1,6 @@
 <template>
   <div id="copyright-div">
-    <span class="copyright-info">Copyright© 2020 Faaiz Ajaz</span>
+    <span class="copyright-info">Copyright© 2020<br>Faaiz Ajaz</span>
   </div>
 </template>
 
@@ -20,7 +20,19 @@ export default {
   right: 14px;
   font-family: 'Source Sans Pro', sans-serif;
   color: grey;
-  font-size: 12px;
+
+}
+
+@media screen and (min-width: 1200px) {
+  #copyright-div {
+    font-size: 10.5px;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  #copyright-div {
+    font-size: 0.65vw;
+  }
 }
 
 </style>
