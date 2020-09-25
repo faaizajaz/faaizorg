@@ -41,6 +41,7 @@ export default {
   padding-right: 0px;
   padding-left: 15px;
   border-bottom: 1px solid #cccccc;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.08);
 }
 
 .portrait-mobile {

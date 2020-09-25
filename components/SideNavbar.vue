@@ -100,7 +100,7 @@ export default {
 } */
 
 a.nav-link {
-  padding-left: 5px;
+  padding-left: 0px;
 }
 
 .nav-item-regular .nuxt-link-active {
@@ -131,6 +131,11 @@ a.nav-link {
   height: auto;
   width: 100%;
   padding-left: 15px;
+}
+
+.sidenav-wrapper {
+  box-shadow: -6px 0 10px -4px rgba(0, 0, 0, 0.12);
+  padding-left: 20px;
 }
 
 </style>

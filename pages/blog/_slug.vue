@@ -81,7 +81,7 @@ export default {
 }
 
 .toc {
-  background-color: #ededed;
+  background-color: #efefef;
   display: inline-block;
   min-width: 150px;
   width: 100%;

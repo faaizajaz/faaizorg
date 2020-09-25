@@ -64,7 +64,7 @@ html {
 }
 
 .gutter {
-    background-color: white;
+    background-color: #efefef;
     min-height: 100vh;
     max-height: 100%;
 }
@@ -72,18 +72,21 @@ html {
 /*TODO: add some media rules for font size*/
 .content {
   font-family: 'Source Sans Pro', sans-serif;
+  box-shadow: 6px 0 10px -4px rgba(0,0,0,0.12);
+  z-index: 1;
 }
 
 @media screen and (max-width: 991px) {
   .content {
-    padding-top:8px;
-    padding-left: 15px !important;
+    padding-top:15px;
+    padding-left: 15px;
   }
 }
 @media screen and (min-width: 992px) {
   .content {
-    padding-top:26px;
-    padding-left: 25px !important;
+    padding-top:28px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
