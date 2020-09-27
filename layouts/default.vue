@@ -17,6 +17,7 @@
 <script>
 import SideNavbar from '../components/SideNavbar'
 import MobileNav from '../components/MobileNav'
+import '../assets/scss/breakpoints.scss'
 
 export default {
   components: {

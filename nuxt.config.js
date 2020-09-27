@@ -59,6 +59,11 @@ export default {
     // Doc: https://github.com/nuxt/content
     '@nuxt/content'
   ],
+
+  bootstrapVue: {
+    bootstrapCSS: false,
+    bootstrapVueCSS: false
+  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
