@@ -34,6 +34,7 @@ export default {
     title: 'Faaiz Ajaz'
   }
 }
+
 </script>
 
 <style>
