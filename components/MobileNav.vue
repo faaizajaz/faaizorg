@@ -84,4 +84,8 @@ export default {
   font-family: 'Bitter', serif;
 }
 
+#nav-text-collapse {
+  padding-bottom: 10px;
+}
+
 </style>
