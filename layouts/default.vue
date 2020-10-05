@@ -24,14 +24,20 @@ export default {
     SideNavbar,
     MobileNav
   },
-  head: {
-    link: [
-      {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Source+Sans+Pro&display=swap'
-      }
-    ],
-    title: 'Faaiz Ajaz'
+  head () {
+    return {
+      link: [
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Source+Sans+Pro&display=swap'
+        },
+        {
+          rel: 'canonical',
+          href: 'https://faaiz.org' + this.$route.path
+        }
+      ],
+      title: 'Faaiz Ajaz'
+    }
   }
 }
 
