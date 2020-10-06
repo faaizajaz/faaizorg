@@ -21,6 +21,8 @@
           <NuxtLink class="nav-item-mobile nav-link" to="/cv" data-toggle="collapse" data-target=".navbar-collapse.show" exact>
             CV
           </NuxtLink>
+          <hr>
+          <DarkModeToggle />
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -28,8 +30,12 @@
 </template>
 
 <script>
-export default {
+import DarkModeToggle from '../components/DarkModeToggle'
 
+export default {
+  components: {
+    DarkModeToggle
+  }
 }
 </script>
 
@@ -38,7 +44,7 @@ export default {
   background-color: white;
   padding-top: 0px;
   padding-bottom: 0px;
-  padding-right: 0px;
+  padding-right: 15px;
   padding-left: 15px;
   border-bottom: 1px solid #cccccc;
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.08);
@@ -86,6 +92,10 @@ export default {
 
 #nav-text-collapse {
   padding-bottom: 10px;
+}
+
+.navbar-brand {
+  margin-right: 0px !important;
 }
 
 </style>
