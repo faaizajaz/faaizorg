@@ -1,7 +1,18 @@
 <template>
   <div id="mobile-nav-div">
     <b-navbar id="mobile-nav" class="d-lg-none fixed-top" toggleable="lg">
-      <b-navbar-toggle id="btn-mobile-nav-collapse" target="nav-text-collapse" />
+      <b-navbar-toggle id="btn-mobile-nav-collapse" target="nav-text-collapse">
+        <svg
+        height="32px"
+        id="hamburger-icon"
+        style="enable-background:new 0 0 32 32;"
+        version="1.1"
+        viewBox="0 0 32 32"
+        width="32px"
+        xml:space="preserve"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
+      </b-navbar-toggle>
       <span class="mobile-nav-title">Faaiz Ajaz</span>
       <b-navbar-brand>
         <!-- <span class="mobile-nav-title">Faaiz Ajaz</span> -->
@@ -84,8 +95,11 @@ export default {
 }
 
 .navbar-toggler-icon {
-  background-image: url("~assets/svg/hamburger.svg") !important;
   min-height: 35px;
+}
+
+#hamburger-icon {
+  fill: var(--font-color) !important;
 }
 
 .mobile-nav-title {

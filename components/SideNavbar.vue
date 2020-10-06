@@ -128,7 +128,7 @@ a.nav-link {
   position: absolute;
   display: flex;
   justify-content: center;
-  bottom:5px;
+  bottom: 15px;
   height: auto;
   width: 100%;
 

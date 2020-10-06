@@ -58,15 +58,11 @@ export default {
 [data-theme="dark"] {
   --content-color: #2f2f2f;
   --gutter-color: #3e3e3e;
-  --mobile-nav-color: #202429;
+  --mobile-nav-color: #545454;
   --toc-color: #3e3e3e;
   --font-color: #dcdcdc;
   --accent-color: #3399cc;
   --shadow: 0.45;
-}
-
-svg {
-  stroke: red;
 }
 
 html {
@@ -133,6 +129,10 @@ body {
   padding-right: 0px;
   min-height: 100vh;
   padding-top: 33px;
+}
+
+hr {
+  border-color: var(--toc-color);
 }
 
 </style>
