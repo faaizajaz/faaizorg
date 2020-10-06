@@ -66,7 +66,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
+@media screen and (min-width: 1051px) and (max-width: 1200px) {
   .nav-item-regular a {
     font-size: 1.60vw;
     padding-top: 5px;
