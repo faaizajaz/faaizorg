@@ -1,13 +1,11 @@
 <template>
-  <div id="toggle-wrapper">
-    <div id="dark-toggle-div">
-      <img class="dark-toggle-icons" src="~assets/svg/light/sun-light.svg">
-      <label class="switch">
-        <input type="checkbox">
-        <span class="slider round" />
-      </label>
-      <img class="dark-toggle-icons" src="~assets/svg/light/moon-light.svg">
-    </div>
+  <div id="dark-toggle-div">
+    <img class="dark-toggle-icons" src="~assets/svg/light/sun-light.svg">
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider round" />
+    </label>
+    <img class="dark-toggle-icons" src="~assets/svg/light/moon-light.svg">
   </div>
 </template>
 
@@ -82,11 +80,6 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-}
-
-#toggle-wrapper {
-  display: flex;
-  justify-content: flex-end;
 }
 
 .dark-toggle-icons {

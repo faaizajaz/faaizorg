@@ -22,7 +22,9 @@
             CV
           </NuxtLink>
           <hr>
-          <DarkModeToggle />
+          <div id="toggle-wrapper">
+            <DarkModeToggle />
+          </div>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -96,6 +98,11 @@ export default {
 
 .navbar-brand {
   margin-right: 0px !important;
+}
+
+#toggle-wrapper {
+  display: flex;
+  justify-content: flex-end;
 }
 
 </style>
