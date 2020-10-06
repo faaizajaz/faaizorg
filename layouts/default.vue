@@ -44,6 +44,24 @@ export default {
 </script>
 
 <style>
+/** VARIABLES **/
+:root {
+  --content-color: #ffffff;
+  --gutter-color: #efefef;
+  --mobile-nav-color: #ffffff;
+  --toc-color: #efefef;
+  --font-color: #202429;
+  --accent-color: #3399cc;
+}
+
+[data-theme="dark"] {
+  --content-color: #2f2f2f;
+  --gutter-color: #3e3e3e;
+  --mobile-nav-color: #202429;
+  --toc-color: #3e3e3e;
+  --font-color: #dcdcdc;
+  --accent-color: #3399cc;
+}
 
 html {
   font-family: 'Bitter', serif;
@@ -66,6 +84,8 @@ html {
 
 body {
   font-size: 13pt;
+  background-color: var(--content-color);
+  color: var(--font-color);
 }
 
 *,
@@ -76,7 +96,7 @@ body {
 }
 
 .gutter {
-    background-color: #efefef;
+    background-color: var(--gutter-color);
     min-height: 100vh;
     max-height: 100%;
 }

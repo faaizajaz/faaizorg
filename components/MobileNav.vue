@@ -43,7 +43,7 @@ export default {
 
 <style>
 #mobile-nav {
-  background-color: white;
+  background-color: var(--mobile-nav-color);
   padding-top: 0px;
   padding-bottom: 0px;
   padding-right: 15px;
@@ -70,7 +70,7 @@ export default {
 }
 
 .nav-item-mobile.nav-link {
-  color: black !important;
+  color: var(--font-color) !important;
   font-size: 20px;
   font-family: 'Bitter', serif;
   padding-bottom: 5px;
@@ -78,8 +78,8 @@ export default {
 }
 
 .nav-item-mobile.nuxt-link-active {
-  color: #3399cc !important;
-  border-left: 10px solid #3399cc;
+  color: var(--accent-color) !important;
+  border-left: 10px solid var(--accent-color);
   padding-left: 5px !important;
 }
 

@@ -42,7 +42,7 @@ export default {
 
 .previous-link,
 .next-link {
-  color: #3399cc;
+  color: var(--accent-color);
 }
 
 .previous-link,

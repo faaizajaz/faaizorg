@@ -47,13 +47,13 @@ export default {
 .nav {
 /*   max-height: 100%;
   min-height: 100vh; */
-  background-color:white;
+  background-color: var(--content-color);
   border-width: 0px;
   padding-top: 0px;
 }
 
 .nav-item-regular a {
-  color: black;
+  color: var(--font-color);
   font-family: 'Bitter', serif;
 }
 
@@ -105,7 +105,7 @@ a.nav-link {
 }
 
 .nav-item-regular .nuxt-link-active {
-  color: #3399cc !important;
+  color: var(--accent-color) !important;
   /* border-left: 10px solid #3399cc; */
 /*   padding-top: 0px;
   padding-bottom: 0px; */
@@ -121,7 +121,7 @@ a.nav-link {
   animation-fill-mode: forwards
 } */
 .nav-link:hover {
-  color: #3399cc;
+  color: var(--accent-color);
 }
 
 #sidebar-footer {
@@ -131,8 +131,7 @@ a.nav-link {
   bottom:5px;
   height: auto;
   width: 100%;
-/*   padding-left: 15px;
-  padding-right: 30px; */
+
 }
 
 .sidenav-wrapper {

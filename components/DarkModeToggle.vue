@@ -1,7 +1,7 @@
 <template>
-  <div id="dark-toggle-div">
+  <div class="dark-toggle-div">
     <img class="dark-toggle-icons" src="~assets/svg/light/sun-light.svg">
-    <label class="switch">
+    <label class="switch" @change="switchTheme">
       <input type="checkbox">
       <span class="slider round" />
     </label>
@@ -11,18 +11,20 @@
 
 <script>
 export default {
-
   name: 'DarkModeToggle',
-
-  data () {
-    return {
-
+  methods: {
+    switchTheme (e) {
+      if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark')
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light')
+      }
     }
   }
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="css">
 /* The switch - the box around the slider */
 .switch {
   position: relative;
@@ -47,8 +49,8 @@ export default {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .slider:before {
@@ -64,7 +66,7 @@ export default {
 }
 
 input:checked + .slider {
-  background-color: #3399cc;
+  background-color: var(--accent-color);
 }
 
 input:checked + .slider:before {
@@ -80,12 +82,6 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-}
-
-#dark-toggle-div {
-  position: absolute;
-  bottom:  5px;
-  right:  auto;
 }
 
 .dark-toggle-icons {
