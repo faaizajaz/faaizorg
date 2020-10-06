@@ -99,7 +99,7 @@ body {
   .content {
     padding-top:28px;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 15px;
   }
 }
 
