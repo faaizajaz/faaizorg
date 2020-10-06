@@ -1,6 +1,6 @@
 <template>
   <div class="dark-toggle-div">
-    <img class="dark-toggle-icons" src="~assets/svg/light/sun-light.svg">
+    <img class="dark-toggle-icons icon" src="~assets/svg/light/sun-light.svg">
     <label class="switch" @change="switchTheme">
       <input type="checkbox">
       <span class="slider round" />
@@ -17,7 +17,7 @@ export default {
       if (e.target.checked) {
         document.documentElement.setAttribute('data-theme', 'dark')
       } else {
-        document.documentElement.setAttribute('data-theme', 'light')
+        document.documentElement.setAttribute('data-theme', '')
       }
     }
   }
@@ -50,26 +50,25 @@ export default {
   bottom: 0;
   background-color: #ccc;
   -webkit-transition: .3s;
-  transition: .3s;
+  transition: all .3s;
 }
 
-.slider:before {
+.slider::before {
   position: absolute;
-  content: "";
+  content:  "";
   height: 14px;
   width: 14px;
   left: 3px;
   bottom: 3px;
   background-color: white;
   -webkit-transition: .3s;
-  transition: .3s;
 }
 
 input:checked + .slider {
   background-color: var(--accent-color);
 }
 
-input:checked + .slider:before {
+input:checked + .slider::before {
   -webkit-transform: translateX(20px);
   -ms-transform: translateX(20px);
   transform: translateX(10px);
@@ -80,7 +79,7 @@ input:checked + .slider:before {
   border-radius: 25px;
 }
 
-.slider.round:before {
+.slider.round::before {
   border-radius: 50%;
 }
 

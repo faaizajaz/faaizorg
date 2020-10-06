@@ -65,6 +65,10 @@ export default {
   --shadow: 0.45;
 }
 
+svg {
+  stroke: red;
+}
+
 html {
   font-family: 'Bitter', serif;
   font-family: 'Source Sans Pro', sans-serif;
