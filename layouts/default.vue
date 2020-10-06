@@ -52,6 +52,7 @@ export default {
   --toc-color: #efefef;
   --font-color: #202429;
   --accent-color: #3399cc;
+  --shadow: 0.08;
 }
 
 [data-theme="dark"] {
@@ -61,6 +62,7 @@ export default {
   --toc-color: #3e3e3e;
   --font-color: #dcdcdc;
   --accent-color: #3399cc;
+  --shadow: 0.45;
 }
 
 html {

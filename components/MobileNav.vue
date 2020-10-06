@@ -48,8 +48,8 @@ export default {
   padding-bottom: 0px;
   padding-right: 15px;
   padding-left: 15px;
-  border-bottom: 1px solid #cccccc;
-  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.08);
+  border-bottom: 1px solid var(--mobile-nav-color);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,var(--shadow));
 }
 
 .portrait-mobile {
