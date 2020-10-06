@@ -28,7 +28,8 @@ export default {
   display: flex;
   width: 100%;
   bottom: 20px;
-  right: 14px;
+  right: auto;
+  left:  auto;
   justify-content: center;
 }
 
