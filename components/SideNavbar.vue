@@ -25,21 +25,18 @@
         </NuxtLink>
       </li>
     </ul>
-    <DarkModeToggle />
     <div id="sidebar-footer">
-      <SocialIcons />
+      <DarkModeToggle />
     </div>
   </span>
 </template>
 
 <script>
-import SocialIcons from '../components/SocialIcons'
 import DarkModeToggle from '../components/DarkModeToggle'
 
 export default {
   name: 'SideNavbar',
   components: {
-    SocialIcons,
     DarkModeToggle
   }
 }
@@ -52,7 +49,7 @@ export default {
   min-height: 100vh; */
   background-color:white;
   border-width: 0px;
-  padding-top: 15px;
+  padding-top: 0px;
 }
 
 .nav-item-regular a {
@@ -77,6 +74,7 @@ export default {
 .portrait {
   border-radius: 50%;
   width: 100%;
+  margin-bottom: 15px;
 }
 
 .portrait-div {
@@ -133,8 +131,8 @@ a.nav-link {
   bottom:5px;
   height: auto;
   width: 100%;
-  padding-left: 15px;
-  padding-right: 30px;
+/*   padding-left: 15px;
+  padding-right: 30px; */
 }
 
 .sidenav-wrapper {

@@ -82,6 +82,12 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+#dark-toggle-div {
+  position: absolute;
+  bottom:  5px;
+  right:  auto;
+}
+
 .dark-toggle-icons {
   height: 15px;
   width: 15px;

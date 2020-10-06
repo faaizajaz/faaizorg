@@ -23,15 +23,15 @@ export default {
 </script>
 
 <style>
-.social-icons {
+/* .social-icons {
   position: absolute;
   display: flex;
   width: 100%;
-  bottom: 20px;
+  bottom: 65px;
   right: auto;
   left:  auto;
   justify-content: center;
-}
+} */
 
 .social-icon {
   width: calc(5px + 1vw);
