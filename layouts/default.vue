@@ -62,7 +62,7 @@ export default {
   --toc-color: #3e3e3e;
   --font-color: #dcdcdc;
   --accent-color: #3399cc;
-  --shadow: 0.45;
+  --shadow: 0.40;
 }
 
 html {
@@ -106,7 +106,7 @@ body {
 /*TODO: add some media rules for font size*/
 .content {
   font-family: 'Source Sans Pro', sans-serif;
-  box-shadow: 6px 0 10px -4px rgba(0,0,0,0.12);
+  box-shadow: 12px 0 10px -4px rgba(0,0,0,var(--shadow));
   z-index: 1;
 }
 

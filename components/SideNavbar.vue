@@ -135,7 +135,7 @@ a.nav-link {
 }
 
 .sidenav-wrapper {
-  box-shadow: -6px 0 10px -4px rgba(0, 0, 0, 0.12);
+  box-shadow: -12px 0 10px -4px rgba(0,0,0,var(--shadow));
   padding-left: 20px;
 }
 
