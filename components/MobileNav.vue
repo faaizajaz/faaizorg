@@ -60,8 +60,8 @@ export default {
   background-color: var(--mobile-nav-color);
   padding-top: 0px;
   padding-bottom: 0px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
   border-bottom: 1px solid var(--mobile-nav-color);
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,var(--shadow));
 }

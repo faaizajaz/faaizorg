@@ -118,7 +118,8 @@ body {
 @media screen and (max-width: 1050px) {
   .content {
     padding-top:15px;
-    padding-left: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     min-height: calc(100vh - 48px);
   }
 }
