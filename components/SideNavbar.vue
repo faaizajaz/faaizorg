@@ -131,6 +131,7 @@ a.nav-link {
   bottom: 15px;
   height: auto;
   width: 100%;
+  margin-left: -10px;
 
 }
 
