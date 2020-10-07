@@ -45,24 +45,28 @@ export default {
 
 <style>
 /** VARIABLES **/
-:root {
-  --content-color: #ffffff;
-  --gutter-color: #efefef;
-  --mobile-nav-color: #ffffff;
-  --toc-color: #efefef;
-  --font-color: #202429;
-  --accent-color: #3399cc;
-  --shadow: 0.08;
+@media (prefers-color-scheme: light) {
+  :root {
+    --content-color: #ffffff;
+    --gutter-color: #efefef;
+    --mobile-nav-color: #ffffff;
+    --toc-color: #efefef;
+    --font-color: #202429;
+    --accent-color: #3399cc;
+    --shadow: 0.08;
+  }
 }
 
-[data-theme="dark"] {
-  --content-color: #2f2f2f;
-  --gutter-color: #3e3e3e;
-  --mobile-nav-color: #545454;
-  --toc-color: #3e3e3e;
-  --font-color: #dcdcdc;
-  --accent-color: #3399cc;
-  --shadow: 0.40;
+@media (prefers-color-scheme: dark) {
+  [data-theme="dark"] {
+    --content-color: #2f2f2f;
+    --gutter-color: #3e3e3e;
+    --mobile-nav-color: #545454;
+    --toc-color: #3e3e3e;
+    --font-color: #dcdcdc;
+    --accent-color: #3399cc;
+    --shadow: 0.40;
+  }
 }
 
 html {
