@@ -106,10 +106,6 @@ export default {
   font-family: 'Bitter', serif;
 }
 
-#nav-text-collapse {
-  padding-bottom: 10px;
-}
-
 .navbar-brand {
   margin-right: 0px !important;
 }
@@ -117,6 +113,7 @@ export default {
 #toggle-wrapper {
   display: flex;
   justify-content: flex-end;
+  padding-bottom: 15px;
 }
 
 </style>
