@@ -132,7 +132,6 @@ a.nav-link {
   height: auto;
   width: 100%;
   margin-left: -10px;
-
 }
 
 .sidenav-wrapper {
