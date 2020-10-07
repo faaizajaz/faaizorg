@@ -159,7 +159,7 @@
     </svg>
     <span>&nbsp;</span>
     <label class="switch" @change="switchTheme">
-      <input type="checkbox">
+      <input type="checkbox" data-toggle="collapse" data-target=".navbar-collapse.show">
       <span class="slider round" />
     </label>
     <span>&nbsp;</span>
@@ -281,11 +281,13 @@ input:checked + .slider::before {
   height: 15px;
   width: 15px;
   stroke-width: 5.5 !important;
+  transition: stroke var(--trans-time);
 }
 
 #light-mode-svg > [id^="path"]{
   stroke: var(--font-color) !important;
   stroke-width: 5.5 !important;
+  transition: stroke var(--trans-time);
 }
 
 #dark-mode-svg,

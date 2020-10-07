@@ -47,7 +47,8 @@ export default {
 .nav {
 /*   max-height: 100%;
   min-height: 100vh; */
-  background-color: var(--content-color);
+  /* background-color: var(--content-color); */
+  background: rgba(6, 0, 0, 0);
   border-width: 0px;
   padding-top: 0px;
 }
@@ -55,6 +56,7 @@ export default {
 .nav-item-regular a {
   color: var(--font-color);
   font-family: 'Bitter', serif;
+  transition: color var(--trans-time);
 }
 
 @media screen and (min-width: 1200px) {
@@ -137,6 +139,7 @@ a.nav-link {
 .sidenav-wrapper {
   box-shadow: -12px 0 10px -4px rgba(0,0,0,var(--shadow));
   padding-left: 20px;
+  transition: box-shadow var(--trans-time);
 }
 
 </style>

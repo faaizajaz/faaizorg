@@ -76,6 +76,7 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   overflow-y: scroll;
+  --trans-time:  0.3s;
 }
 
 @media screen and (max-width: 1050px) {
@@ -88,6 +89,7 @@ body {
   font-size: 13pt;
   background-color: var(--content-color);
   color: var(--font-color);
+  transition: background-color var(--trans-time), color var(--trans-time);
 }
 
 *,
@@ -101,6 +103,7 @@ body {
     background-color: var(--gutter-color);
     min-height: 100vh;
     max-height: 100%;
+    transition: background-color var(--trans-time);
 }
 
 /*TODO: add some media rules for font size*/
@@ -108,6 +111,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   box-shadow: 12px 0 10px -4px rgba(0,0,0,var(--shadow));
   z-index: 1;
+  transition: box-shadow var(--trans-time);
 }
 
 @media screen and (max-width: 1050px) {
