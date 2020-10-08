@@ -90,6 +90,7 @@ export default {
   border-radius: 5px;
   margin-bottom: 13px;
   margin-top: 7px;
+  transition: background-color var(--trans-time);
 
 }
 

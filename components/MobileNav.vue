@@ -62,7 +62,7 @@ export default {
   padding-bottom: 0px;
   padding-right: 10px;
   padding-left: 10px;
-  border-bottom: 1px solid var(--mobile-nav-color);
+  border-bottom: 1px solid var(--toc-color);
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,var(--shadow));
 }
 
