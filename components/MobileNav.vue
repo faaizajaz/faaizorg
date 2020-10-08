@@ -64,7 +64,7 @@ export default {
   padding-left: 10px;
   border-bottom: 1px solid var(--toc-color);
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,var(--shadow));
-  transition: background-color var(--trans-time);
+  transition: background-color var(--trans-time), border-bottom var(--trans-time);
 }
 
 .portrait-mobile {
