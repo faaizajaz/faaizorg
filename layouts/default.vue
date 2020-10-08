@@ -139,6 +139,7 @@ body {
 
 hr {
   border-color: var(--toc-color);
+  transition: border-color var(--trans-time);
 }
 
 </style>
