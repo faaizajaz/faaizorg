@@ -90,6 +90,7 @@ export default {
   font-family: 'Bitter', serif;
   padding-bottom: 5px;
   padding-top: 5px;
+  transition: color var(--trans-time);
 }
 
 .nav-item-mobile.nuxt-link-active {
