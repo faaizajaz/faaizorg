@@ -19,7 +19,7 @@
       <span class="mobile-nav-title">Faaiz Ajaz</span>
       <b-navbar-brand>
         <!-- <span class="mobile-nav-title">Faaiz Ajaz</span> -->
-        <img class="portrait-mobile" src="~assets/portrait/me.png">
+        <img class="portrait-mobile" src="~assets/portrait/Faaiz_Ajaz_Hunza.png" alt="An image of Faaiz Ajaz above the Hunza Valley">
       </b-navbar-brand>
       <b-collapse id="nav-text-collapse" is-nav>
         <b-navbar-nav>

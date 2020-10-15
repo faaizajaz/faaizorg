@@ -3,8 +3,8 @@ author:
   name: Faaiz
   bio: A cool guy
 
-title: First Post
-description: Obviously, this is the first blog post
+title: A post about a bunch of nonsense
+description: Genuine nonsense
 
 ---
 ## Welcome

@@ -87,7 +87,7 @@ html {
 }
 
 body {
-  font-size: 13pt;
+  font-size: 15pt;
   background-color: var(--content-color);
   color: var(--font-color);
   transition: background-color var(--trans-time), color var(--trans-time);

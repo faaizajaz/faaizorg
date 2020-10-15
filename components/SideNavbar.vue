@@ -1,7 +1,7 @@
 <template>
   <span>
     <div class="portrait-div">
-      <img class="portrait" src="~assets/portrait/me.png" alt="">
+      <img class="portrait" src="~assets/portrait/Faaiz_Ajaz_Hunza.png" alt="An image of Faaiz Ajaz above the Hunza Valley">
     </div>
     <ul class="nav flex-column flex-nowrap overflow-auto text-white">
       <li class="nav-item-regular">

@@ -5,14 +5,17 @@
     </h1>
     <BarDivider />
     <p>
-      This is my blog. Maybe I'll post things here, maybe I won't.
+      This is my blog. I will occasionally post things here for SEO purposes. Don't expect any big ideas here.
     </p>
     <ul id="blog-home-list">
       <li v-for="post in allPosts" :key="post.slug">
-        <NuxtLink :to="{ name: 'blog-slug', params: { slug: post.slug }}">
-          <h5>{{ post.title }}</h5>
-        </NuxtLink>
-        <span>{{ post.description }}</span>
+        <p>
+          <NuxtLink :to="{ name: 'blog-slug', params: { slug: post.slug }}">
+            {{ post.title }}
+          </NuxtLink>
+          <br>
+          <span>{{ post.description }}</span>
+        </p>
         <hr class="hr-1px">
       </li>
     </ul>
