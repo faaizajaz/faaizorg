@@ -7,7 +7,7 @@
     <div>
       <h1>Faaiz Ajaz <small>[faɪz ɪˈd͡ʒaz]</small></h1>
       <p>
-        My name is Faaiz, which rhymes with fries or lies or spies. I am an international development consultant working in the climate change and disaster risk reduction space. You can find out more by checking out my CV
+        My name is Faaiz<!-- , which rhymes with fries or lies or spies. I am an international development consultant working in the climate change and disaster risk reduction space. You can find out more by checking out my CV
         <NuxtLink to="/cv">
           here,
         </NuxtLink>
@@ -17,7 +17,7 @@
         I made this website to take back some control of my internet search results. If this page isn't the first result returned when you search for 'Faaiz Ajaz' on your choice of search engine, then I have not yet succeeded in doing so.
       </p>
       <p>
-        It is more difficult than it sounds.
+        It is more difficult than it sounds. -->
       </p>
     </div>
   </div>
