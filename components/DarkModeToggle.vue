@@ -248,6 +248,7 @@ export default {
   bottom: 3px;
   background-color: white;
   -webkit-transition: .3s;
+  transition: all .3s;
 }
 
 input:checked + .slider {
