@@ -53,6 +53,7 @@ export default {
     DarkModeToggle
   }
 }
+
 </script>
 
 <style>
