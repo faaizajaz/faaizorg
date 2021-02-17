@@ -5,7 +5,7 @@
     </h1>
     <BarDivider />
     <p>
-      This is my blog. I will occasionally post things here for SEO purposes. Don't expect any big ideas here.
+      A blog.
     </p>
     <ul id="blog-home-list">
       <li v-for="post in allPosts" :key="post.slug">
